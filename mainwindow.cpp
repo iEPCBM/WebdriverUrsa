@@ -118,7 +118,7 @@ void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
 
 void MainWindow::saveLinks()
 {
-    QFile file("links.csv");
+    QFile file("links.txt");
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         QMessageBox::critical(this, "Ошибка", "Не удалось сохранить файл!");
         return;
